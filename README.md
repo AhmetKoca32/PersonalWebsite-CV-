@@ -65,3 +65,76 @@ For questions, feedback, or collaboration inquiries, feel free to reach out:
 - **GitHub:** [AhmetKoca32](https://github.com/AhmetKoca32)
 
 Thank you for visiting my personal portfolio!
+
+
+
+
+
+# Kişisel Web Sitesi - CV
+
+## Genel Bakış
+
+Kişisel web siteme ve CV'ime hoş geldiniz! Bu dijital alan, becerilerimi, deneyimlerimi ve projelerimi sergilemek amacıyla tasarlandı. Web sitem, potansiyel işverenler ve iş birliği yapmak isteyen kişiler için profesyonel geçmişim ve yeteneklerim hakkında kapsamlı bir bakış sunan bir çevrimiçi özgeçmiş işlevi görmektedir.
+
+## Özellikler
+
+- **Duyarlı Tasarım**  
+  Tüm cihazlarda sorunsuz bir deneyim sunmak üzere optimize edilmiştir; masaüstü, tablet ve mobil cihazlarda kusursuz çalışır.
+
+- **Beceriler Bölümü**  
+  Temel becerilerimi, yetkinlik göstergeleri ile birlikte öne çıkarır.
+
+- **Deneyim Bölümü**  
+  Kariyer gelişimimi kolayca görebilmeniz için profesyonel deneyimlerimi zaman çizelgesi formatında sunar.
+
+- **İletişim Formu**  
+  Doğrudan iletişim sağlar; böylece potansiyel işverenlerin ve iş birliği yapmak isteyen kişilerin kolayca iletişime geçmesini sağlar.
+
+- **Harita Entegrasyonu**  
+  Güncel konumumu Google Haritalar üzerinden göstererek daha kişisel bir bağlantı sağlar.
+
+## Kullanılan Teknolojiler
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Bootstrap** (stil ve düzen için)
+- **PHP** (iletişim formu işlevselliği için)
+
+## Kurulum
+
+Bu projeyi yerel olarak çalıştırmak için aşağıdaki adımları izleyin:
+
+1. **Depoyu klonlayın:**
+   ```bash
+   git clone https://github.com/AhmetKoca32/PersonalWebsite-CV.git
+   ```
+
+2. **Proje dizinine gidin:**
+   ```bash
+   cd PersonalWebsite-CV
+   ```
+
+3. **‘index.html’ dosyasını web tarayıcınızda açın:**
+
+## Kullanım
+
+Portföyü keşfederek beceri ve deneyimlerim hakkında daha fazla bilgi edinebilirsiniz. İş birliği veya soru sormak için iletişim formu üzerinden kolayca ulaşabilirsiniz.
+
+## Teşekkürler
+
+Bu proje, [codewithsadee](https://github.com/codewithsadee) tarafından sağlanan özgün tasarımdan ilham alınarak oluşturulmuştur. Sağlam bir temel sundukları için kendilerine özel bir teşekkür ederim.
+
+## Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
+
+## İletişim
+
+Sorularınız, geri bildirimleriniz veya iş birliği talepleriniz için iletişime geçmekten çekinmeyin:
+
+- **Email:** kocaahmetkoca32@gmail.com
+- **GitHub:** [AhmetKoca32](https://github.com/AhmetKoca32)
+
+Kişisel portföyümü ziyaret ettiğiniz için teşekkür ederim!
+
