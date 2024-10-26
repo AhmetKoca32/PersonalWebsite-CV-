@@ -1,0 +1,8 @@
+# Tüm dosyalarda otomatik satır sonu işleme
+* text=auto
+
+# JSON ve PHP dosyalarında LF satır sonu kullan
+*.json text eol=lf
+*.php text eol=lf
+
+.gitattributes text eol=lf
