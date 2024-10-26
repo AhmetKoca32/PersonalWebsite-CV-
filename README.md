@@ -27,3 +27,24 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/AhmetKoca32/PersonalWebsite-CV.git
+
+2. **Navigate to the project directory:**
+   cd PersonalWebsite-CV
+3. **Open the 'index.html' file in your web browser:**
+Usage
+Feel free to explore the portfolio and reach out via the contact form for any inquiries or collaborations. The portfolio includes sections for skills, experiences, and a contact form for easy communication.
+
+Acknowledgments
+This project was inspired by the original design from codewithsadee. A special thanks to them for providing a solid foundation that I could build upon.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+For any questions or feedback, feel free to reach out to me:
+
+Email: kocaahmetkoca32@gmail.com
+GitHub: AhmetKoca32
+
+Thank you for visiting my personal portfolio!
+   
