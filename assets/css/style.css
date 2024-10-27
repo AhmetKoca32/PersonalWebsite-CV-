@@ -333,8 +333,10 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 20px; /* Bu zaten kutunun kenarlarını ovalleştiriyor */
+  overflow: hidden; /* Fotoğrafın kenarları oval olması için */
 }
+
 
 .info-content .name {
   color: var(--white-2);
