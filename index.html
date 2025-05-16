@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmet Koca</title>
+  <title>Ahmet Koca - Cross Platform Developer with Flutter</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ahmet Koca - Flutter ile Cross Platform Developer portfolyo sitesi. Mobil uygulama geliştirme, Web Development ve diğer projelerimi inceleyin.">
+  <meta name="keywords" content="Ahmet Koca, Cross Platform Developer, Flutter Developer, Mobile Developer, Web Developer, Dart, React, JavaScript, Portfolio">
+  <meta name="author" content="Ahmet Koca">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ahmet Koca - Cross Platform Developer with Flutter">
+  <meta property="og:description" content="Ahmet Koca - Flutter ile Cross Platform Developer portfolyo sitesi. Mobil uygulama geliştirme, Web Development ve diğer projelerimi inceleyin.">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+  <meta property="og:url" content="https://ahmetkocaportfolio.vercel.app/">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahmet Koca - Cross Platform Developer with Flutter">
+  <meta name="twitter:description" content="Ahmet Koca - Flutter ile Cross Platform Developer portfolyo sitesi. Mobil uygulama geliştirme, Web Development ve diğer projelerimi inceleyin.">
+  <meta name="twitter:image" content="./assets/images/my-avatar.png">
 
-  <!--
-    - favicon
-  -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -42,19 +53,19 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Ahmet Koca'nın profil fotoğrafı" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Ahmet Koca</h1>
+          <h1 class="name" title="Ahmet Koca">Ahmet Koca</h1>
 
-          <p class="title">Mobile Developer</p>
+          <p class="title">Cross Platform Developer with Flutter</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn aria-label="İletişim bilgilerini göster/gizle">
           <span>Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
         </button>
 
       </div>
@@ -167,12 +178,12 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <nav class="navbar" role="navigation" aria-label="Ana menü">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link aria-current="page">About</button>
           </li>
 
           <li class="navbar-item">
@@ -608,30 +619,30 @@
     <li class="skills-item">
       <div class="title-wrapper">
         <h5 class="h5">Flutter Development</h5>
-        <data value="70">70%</data>
+        <data value="90">90%</data>
       </div>
       <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 70%;"></div>
+        <div class="skill-progress-fill" style="width: 90%;"></div>
       </div>
     </li>
 
     <li class="skills-item">
       <div class="title-wrapper">
-        <h5 class="h5">Game Design</h5>
-        <data value="60">40%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 60%;"></div>
-      </div>
-    </li>
-
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Data Structures & Algorithms</h5>
+        <h5 class="h5">Dart Programming</h5>
         <data value="85">85%</data>
       </div>
       <div class="skill-progress-bg">
         <div class="skill-progress-fill" style="width: 85%;"></div>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Web Development</h5>
+        <data value="75">75%</data>
+      </div>
+      <div class="skill-progress-bg">
+        <div class="skill-progress-fill" style="width: 75%;"></div>
       </div>
     </li>
 
@@ -723,7 +734,25 @@
           </div>
 
           <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/AhmetKoca32/EcoTale" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ecotale.jpg" alt="EcoTale App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EcoTale</h3>
+
+                <p class="project-category">Yapay zeka destekli, doğa temalı interaktif hikaye anlatım platformu. Orman temalı arka planlar, animasyonlu metin akışları ve gerçek zamanlı hikaye üretimi ile çocuklara sürdürülebilir bir gelecek vizyonu sunan yenilikçi bir eğitim uygulaması.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/AhmetKoca32/To-Do-List-App" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -731,17 +760,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/app_dev.jpeg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/To_do.png" alt="ToDo List App" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">ToDo List</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Flutter ile geliştirilmiş, Firebase entegrasyonlu modern bir görev yönetim uygulaması. Kullanıcı dostu arayüz ve gerçek zamanlı veri senkronizasyonu.</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/AhmetKoca32/Veresiye-Defteri" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -749,17 +778,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/app_dev.jpeg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Credit_Ledger.png" alt="Veresiye Defteri App" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Veresiye Defteri</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Flutter ile geliştirilmiş, yerel işletmeler için müşteri borç takip uygulaması. SQLite veritabanı entegrasyonu ve detaylı raporlama özellikleri.</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://github.com/tubitaksting" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -767,17 +796,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/app_dev.jpeg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Sting.jpg" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">STİNG Tübitak Project</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Yapay zeka destekli veri analiz platformu. Gerçek zamanlı veri akışı, derin öğrenme modelleri ve modern kullanıcı arayüzü ile entegre bir sistem. Nöral ağ diyagramları ve veri görselleştirme araçları ile kullanıcı dostu bir deneyim sunan yenilikçi bir proje.</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="https://www.konwoy.com" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -785,17 +814,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/app_dev.jpeg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Konwoy.jpg" alt="Konwoy App" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">KONWOY App</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Flutter ile geliştirilmiş, güvenli ve ekonomik paylaşımlı yolculuk platformu. Gelişmiş güvenlik sistemleri, 7/24 hizmet ve cinsiyet eşitliği odaklı yaklaşımıyla öne çıkan yenilikçi bir mobil uygulama.</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://ahmetkocaportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -813,7 +842,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://ahmetkoca.vercel.app/" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -831,7 +860,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://sphere-packing.vercel.app" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -849,7 +878,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://tower-blocks-game.vercel.app" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -867,7 +896,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/AhmetKoca32/Hospital-Appointment-System" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -885,7 +914,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/AhmetKoca32/Library-Management-System" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
