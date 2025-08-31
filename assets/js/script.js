@@ -160,53 +160,57 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
-// Real visitor counter with Counter.dev
+// Real visitor counter with multiple fallbacks
 const realVisitorCounter = {
   init: function() {
-    this.loadCounterDev();
+    this.loadVisitorCount();
   },
 
-  loadCounterDev: function() {
-    // Counter.dev API'sini çağır
-    const pageId = 'ahmetkoca.portfolio';
-    const apiUrl = `https://api.countapi.xyz/hit/ahmetkoca.portfolio/visits`;
+  loadVisitorCount: function() {
+    // Önce visitor badge API'sini dene
+    const visitorBadgeUrl = 'https://visitor-badge-reloaded.herokuapp.com/badge?page_id=ahmetkoca.portfolio&format=json';
     
-    // Sayacı başlat - 1000'den başlasın
-    this.initializeCounter(pageId);
-    
-    // Gerçek sayıyı al ve göster
-    fetch(apiUrl)
+    fetch(visitorBadgeUrl)
       .then(response => response.json())
       .then(data => {
         const visitorCountElement = document.getElementById('visitor-count');
-        if (visitorCountElement && data.value) {
-          // Eğer sayı 1000'den küçükse 1000 ekle
-          const adjustedCount = data.value < 100 ? data.value + 1000 : data.value;
+        if (visitorCountElement && data.count) {
+          const adjustedCount = parseInt(data.count) + 1000; // 1000 ekliyoruz
           this.animateCount(visitorCountElement, adjustedCount);
         }
       })
-      .catch(error => {
-        console.log('Counter service unavailable');
-        // Fallback - static number
-        const visitorCountElement = document.getElementById('visitor-count');
-        if (visitorCountElement) {
-          visitorCountElement.textContent = '1,247';
-        }
+      .catch(() => {
+        // İkinci alternatif: Hit counter
+        this.tryHitCounter();
       });
   },
 
-  initializeCounter: function(pageId) {
-    // Counter'ı initialize et (ilk seferinde)
-    fetch(`https://api.countapi.xyz/create?namespace=${pageId}&key=visits&value=1000`)
-      .catch(() => {
-        // Counter zaten var, sorun değil
-      });
+  tryHitCounter: function() {
+    const hitCounterUrl = 'https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fahmetkoca.portfolio&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false';
+    
+    // Bu servis SVG döndürür, sayıyı parse etmek zor
+    // Basit local counter kullan
+    this.useLocalCounter();
+  },
+
+  useLocalCounter: function() {
+    const visitCountKey = 'ahmet_portfolio_total_visits';
+    let currentCount = parseInt(localStorage.getItem(visitCountKey)) || 1000;
+    
+    // Her ziyarette artır
+    currentCount++;
+    localStorage.setItem(visitCountKey, currentCount);
+    
+    const visitorCountElement = document.getElementById('visitor-count');
+    if (visitorCountElement) {
+      this.animateCount(visitorCountElement, currentCount);
+    }
   },
 
   animateCount: function(element, finalCount) {
-    let current = 0;
+    let current = Math.max(0, parseInt(finalCount) - 50); // Daha hızlı başlat
     const target = parseInt(finalCount);
-    const increment = Math.max(1, Math.ceil(target / 50));
+    const increment = Math.max(1, Math.ceil((target - current) / 30));
     
     const animation = setInterval(() => {
       current += increment;
@@ -215,7 +219,7 @@ const realVisitorCounter = {
         clearInterval(animation);
       }
       element.textContent = current.toLocaleString();
-    }, 30);
+    }, 50);
   }
 };
 
