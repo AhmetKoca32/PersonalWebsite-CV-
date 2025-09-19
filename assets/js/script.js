@@ -160,58 +160,35 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
-// Real visitor counter with multiple fallbacks
-const realVisitorCounter = {
+// Ziyaretçi sayacını haftada 10 kişi artıran yeni sayaç
+const weeklyVisitorCounter = {
+  // Başlangıç tarihi (YIL, AY-1, GÜN) - 1 Ocak 2024
+  startDate: new Date(2025, 0, 1),
+  // Başlangıç ziyaretçi sayısı
+  baseCount: 1000,
+  // Haftalık artış
+  weeklyIncrease: 12,
+
   init: function() {
-    this.loadVisitorCount();
+    this.updateVisitorCount();
   },
 
-  loadVisitorCount: function() {
-    // Önce visitor badge API'sini dene
-    const visitorBadgeUrl = 'https://visitor-badge-reloaded.herokuapp.com/badge?page_id=ahmetkoca.portfolio&format=json';
-    
-    fetch(visitorBadgeUrl)
-      .then(response => response.json())
-      .then(data => {
-        const visitorCountElement = document.getElementById('visitor-count');
-        if (visitorCountElement && data.count) {
-          const adjustedCount = parseInt(data.count) + 1000; // 1000 ekliyoruz
-          this.animateCount(visitorCountElement, adjustedCount);
-        }
-      })
-      .catch(() => {
-        // İkinci alternatif: Hit counter
-        this.tryHitCounter();
-      });
-  },
-
-  tryHitCounter: function() {
-    const hitCounterUrl = 'https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fahmetkoca.portfolio&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false';
-    
-    // Bu servis SVG döndürür, sayıyı parse etmek zor
-    // Basit local counter kullan
-    this.useLocalCounter();
-  },
-
-  useLocalCounter: function() {
-    const visitCountKey = 'ahmet_portfolio_total_visits';
-    let currentCount = parseInt(localStorage.getItem(visitCountKey)) || 1000;
-    
-    // Her ziyarette artır
-    currentCount++;
-    localStorage.setItem(visitCountKey, currentCount);
-    
+  updateVisitorCount: function() {
+    const now = new Date();
+    // Geçen hafta sayısı
+    const diffTime = now - this.startDate;
+    const diffWeeks = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 7));
+    const visitorCount = this.baseCount + (diffWeeks * this.weeklyIncrease);
     const visitorCountElement = document.getElementById('visitor-count');
     if (visitorCountElement) {
-      this.animateCount(visitorCountElement, currentCount);
+      this.animateCount(visitorCountElement, visitorCount);
     }
   },
 
   animateCount: function(element, finalCount) {
-    let current = Math.max(0, parseInt(finalCount) - 50); // Daha hızlı başlat
+    let current = Math.max(0, parseInt(finalCount) - 50);
     const target = parseInt(finalCount);
     const increment = Math.max(1, Math.ceil((target - current) / 30));
-    
     const animation = setInterval(() => {
       current += increment;
       if (current >= target) {
@@ -225,5 +202,5 @@ const realVisitorCounter = {
 
 // Sayfa yüklendiğinde başlat
 document.addEventListener('DOMContentLoaded', function() {
-  realVisitorCounter.init();
+  weeklyVisitorCounter.init();
 });
