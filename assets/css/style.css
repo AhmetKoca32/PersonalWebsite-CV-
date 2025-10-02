@@ -328,6 +328,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -335,6 +336,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px; /* Bu zaten kutunun kenarlarını ovalleştiriyor */
   overflow: hidden; /* Fotoğrafın kenarları oval olması için */
+  flex-shrink: 0;
 }
 
 
@@ -345,6 +347,8 @@ main {
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
+
+.info-content { flex: 1; min-width: 0; }
 
 .info-content .title {
   color: var(--white-1);
@@ -392,6 +396,15 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
+}
+
+/* Position visitor counter in header without affecting layout */
+.sidebar .visitor-counter {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-basis: auto;
 }
 
 .sidebar.active .sidebar-info_more {
