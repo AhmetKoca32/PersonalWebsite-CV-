@@ -1879,6 +1879,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-weight: var(--fw-300);
   }
 
+  .contact-info .contact-link {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-all;
+  }
+
   .separator:last-of-type {
     margin: 15px 0;
     opacity: 0;
