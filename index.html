@@ -15,20 +15,42 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Ahmet Koca - Bilgisayar Mühendisi">
   <meta property="og:description" content="Ahmet Koca - Bilgisayar Mühendisi portfolyo sitesi. Flutter ile mobil uygulama geliştirme, Web Development, Backend Development ve diğer projelerimi inceleyin.">
-  <meta property="og:image" content="./assets/images/my-avatar.png">
+  <meta property="og:image" content="https://ahmet-koca-portfolio.vercel.app/assets/images/my-avatar.png">
   <meta property="og:url" content="https://ahmet-koca-portfolio.vercel.app/">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ahmet Koca - Bilgisayar Mühendisi">
   <meta name="twitter:description" content="Ahmet Koca - Bilgisayar Mühendisi portfolyo sitesi. Flutter ile mobil uygulama geliştirme, Web Development, Backend Development ve diğer projelerimi inceleyin.">
-  <meta name="twitter:image" content="./assets/images/my-avatar.png">
+  <meta name="twitter:image" content="https://ahmet-koca-portfolio.vercel.app/assets/images/my-avatar.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmet Koca",
+    "jobTitle": "Cross Platform Developer",
+    "url": "https://ahmet-koca-portfolio.vercel.app/",
+    "image": "https://ahmet-koca-portfolio.vercel.app/assets/images/my-avatar.png",
+    "email": "ahmetkoca.dev@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Isparta",
+      "addressCountry": "TR"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ahmetkocaa/",
+      "https://github.com/AhmetKoca32",
+      "https://medium.com/@ahmetkocaa"
+    ]
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=6">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,21 +122,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+90 505 275 22 03</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">July 6, 2004</time>
+              <a href="tel:+905052752203" class="contact-link">+90 505 275 22 03</a>
             </div>
 
           </li>
@@ -140,28 +148,20 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/ahmetkocaa/" class="social-link" target="_blank">
+            <a href="https://www.linkedin.com/in/ahmetkocaa/" class="social-link" target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </a>
         </li>
         <li class="social-item">
-          <a href="https://medium.com/@ahmetkocaa" class="social-link" target="_blank">
+          <a href="https://medium.com/@ahmetkocaa" class="social-link" target="_blank" rel="noopener noreferrer">
             <ion-icon name="logo-medium"></ion-icon>
           </a>
         </li>
         <li class="social-item">
-            <a href="https://github.com/AhmetKoca32" class="social-link" target="_blank">
+            <a href="https://github.com/AhmetKoca32" class="social-link" target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-github"></ion-icon>
             </a>
         </li>
-        
-        <li class="social-item">
-            <a href="https://www.instagram.com/ahmetkoca/" class="social-link" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-        </li>
-        
-          </li>
 
         </ul>
 
@@ -226,26 +226,67 @@
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
         
         <section class="about-text">
           <p>Merhaba, ben Ahmet Koca. Yenilikçi mobil teknolojiler ile karmaşık yapay zeka sistemleri arasında köprü kuran bir bilgisayar mühendisliği öğrencisiyim. Uzmanlık alanım, Flutter kullanarak yüksek performanslı, ölçeklenebilir ve yapay zeka destekli mobil çözümler geliştirmektir.</p>
-        
-          <p>TÜBİTAK STING Projesi'ndeki araştırmacı rolümden edindiğim makine öğrenmesi (GAN, GNN) altyapısını, Konwoy girişimindeki kurucu ortak tecrübemle birleştirerek, teknik bilgiyi (FastAPI, PostgreSQL, Redis) gerçek dünya sorunlarını çözen somut ürünlere dönüştürmeye odaklanıyorum.</p>
 
-          <p>Amacım, teknolojiyi sadece bir araç olarak değil, aynı zamanda kullanıcılar için akıllı, erişilebilir ve değer yaratan deneyimler inşa etmenin bir yolu olarak kullanmaktır.</p>
-        
-          
+          <p>Yapay zeka tarafında makine öğrenmesi ve derin öğrenmenin yanı sıra RAG, model fine-tuning ve agentic AI mimarileriyle çalışıyorum. LLM tabanlı ajanlar, araç çağırma (tool use) ve vektör veritabanları (ChromaDB) ile bağlamı yöneten akışlar kuruyorum; bu katmanları Python ve FastAPI ile servisleştirip PostgreSQL ve Redis ile destekliyorum.</p>
+
+          <p>Amacım, teknolojiyi sadece bir araç olarak değil, aynı zamanda kullanıcılar için akıllı, erişilebilir ve değer yaratan deneyimler inşa etmenin bir yolu olarak kullanmaktır. İngilizce: B2 (okuma ve teknik iletişim).</p>
         </section>
-        
-     
-        
-        
 
-        <!--
-          - service
-        -->
+        <div class="about-cta">
+          <details class="cv-dropdown">
+            <summary class="cv-dropdown-trigger about-cta-btn about-cta-btn--primary">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <span>CV İndir</span>
+              <ion-icon name="chevron-down-outline" class="cv-dropdown-chevron"></ion-icon>
+            </summary>
+            <div class="cv-dropdown-menu" role="listbox" aria-label="CV dili seçin">
+              <a href="assets/cv/CV-TR.pdf" download class="cv-dropdown-item" role="option">
+                <span class="cv-dropdown-lang">TR</span>
+                <span>Türkçe</span>
+              </a>
+              <a href="assets/cv/CV-ENG.pdf" download class="cv-dropdown-item" role="option">
+                <span class="cv-dropdown-lang">ENG</span>
+                <span>English</span>
+              </a>
+            </div>
+          </details>
+          <button type="button" class="about-cta-btn" data-nav-target="portfolio">
+            <ion-icon name="briefcase-outline"></ion-icon>
+            Projeleri Gör
+          </button>
+          <a href="https://www.linkedin.com/in/ahmetkocaa/" target="_blank" rel="noopener noreferrer" class="about-cta-btn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            LinkedIn
+          </a>
+          <a href="https://github.com/AhmetKoca32" target="_blank" rel="noopener noreferrer" class="about-cta-btn">
+            <ion-icon name="logo-github"></ion-icon>
+            GitHub
+          </a>
+        </div>
+
+        <section class="featured-projects">
+          <h3 class="h3 featured-projects-title">Öne çıkan projeler</h3>
+          <ul class="featured-projects-list">
+            <li class="featured-project-card content-card">
+              <h4 class="h4">ZoneRun</h4>
+              <p class="featured-project-desc">GPS ile alan fethetme fitness oyunu; Flutter, SQLite, Firebase, Google Maps. Mağazalarda yakında.</p>
+              <a href="https://github.com/AhmetKoca32/ZoneRun" target="_blank" rel="noopener noreferrer" class="featured-project-link">GitHub →</a>
+            </li>
+            <li class="featured-project-card content-card">
+              <h4 class="h4">Stayzi</h4>
+              <p class="featured-project-desc">Flutter & FastAPI ile konaklama platformu; PostgreSQL, Redis, RabbitMQ.</p>
+              <a href="https://github.com/AhmetKoca32/Stayzi" target="_blank" rel="noopener noreferrer" class="featured-project-link">GitHub →</a>
+            </li>
+            <li class="featured-project-card content-card">
+              <h4 class="h4">Shoplytic</h4>
+              <p class="featured-project-desc">RAG ve ChromaDB ile tüketici hukuku odaklı Flutter uygulaması.</p>
+              <a href="https://github.com/AhmetKoca32/BtkAkademi-Hackathon-2025" target="_blank" rel="noopener noreferrer" class="featured-project-link">GitHub →</a>
+            </li>
+          </ul>
+        </section>
 
         <section class="service">
 
@@ -265,9 +306,15 @@
                 <p class="service-item-text">
                   Modern ve ölçeklenebilir web uygulamaları geliştirme.
                 </p>
-                <p class="service-item-text">
-                  HTML, CSS, JavaScript, React, FastAPI, Django, Flask
-                </p>
+                <div class="service-tech-tags">
+                  <span class="service-tag">HTML</span>
+                  <span class="service-tag">CSS</span>
+                  <span class="service-tag">JavaScript</span>
+                  <span class="service-tag">React</span>
+                  <span class="service-tag">FastAPI</span>
+                  <span class="service-tag">Django</span>
+                  <span class="service-tag">Flask</span>
+                </div>
               </div>
             
             </li>
@@ -284,9 +331,13 @@
                 <p class="service-item-text">
                   Cross-platform mobil uygulama geliştirme.
                 </p>
-                <p class="service-item-text">
-                  Flutter, Dart,Firebase
-                </p>
+                <div class="service-tech-tags">
+                  <span class="service-tag">Flutter</span>
+                  <span class="service-tag">Dart</span>
+                  <span class="service-tag">Firebase</span>
+                  <span class="service-tag">Provider</span>
+                  <span class="service-tag">Go Router</span>
+                </div>
               </div>
             
             </li>
@@ -303,9 +354,14 @@
                 <p class="service-item-text">
                   Güvenli ve ölçeklenebilir backend sistemleri tasarlama ve geliştirme.
                 </p>
-                <p class="service-item-text">
-                  Python,FastAPI,Flask, Django, GraphQL, REST APIs
-                </p>
+                <div class="service-tech-tags">
+                  <span class="service-tag">Python</span>
+                  <span class="service-tag">FastAPI</span>
+                  <span class="service-tag">Flask</span>
+                  <span class="service-tag">Django</span>
+                  <span class="service-tag">GraphQL</span>
+                  <span class="service-tag">REST APIs</span>
+                </div>
               </div>
             
             </li>
@@ -322,214 +378,21 @@
                 <p class="service-item-text">
                   Veritabanı yönetimi ve bulut tabanlı çözümler geliştirme.
                 </p>
-                <p class="service-item-text">
-                  MySQL, PostgreSQL, SQLite, Redis, Docker, Kubernetes, GCP
-                </p>
+                <div class="service-tech-tags">
+                  <span class="service-tag">MySQL</span>
+                  <span class="service-tag">PostgreSQL</span>
+                  <span class="service-tag">SQLite</span>
+                  <span class="service-tag">Redis</span>
+                  <span class="service-tag">Docker</span>
+                  <span class="service-tag">Kubernetes</span>
+                  <span class="service-tag">GCP</span>
+                </div>
               </div>
             
             </li>
           </ul>
 
         </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
 
       </article>
 
@@ -547,17 +410,26 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <p style="margin-bottom: 12px; color: #888; font-size: 15px;">Aşağıdan özgeçmişimi Türkçe veya İngilizce olarak PDF formatında indirebilirsiniz.</p>
+        <p class="resume-cv-note">Özgeçmişimi PDF formatında indirebilirsiniz. Dil seçerek indirin.</p>
 
-        <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
-          <a href="assets/cv/CV-English.pdf" download class="cv-download-btn" style="display: inline-flex; align-items: center; gap: 8px; background: #ffdb70; color: #222; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: background 0.2s;">
-            <ion-icon name="cloud-download-outline" style="font-size: 18px;"></ion-icon>
-            English CV
-          </a>
-          <a href="assets/cv/CV-Turkish.pdf" download class="cv-download-btn" style="display: inline-flex; align-items: center; gap: 8px; background: #ffdb70; color: #222; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: background 0.2s;">
-            <ion-icon name="cloud-download-outline" style="font-size: 18px;"></ion-icon>
-            Türkçe CV
-          </a>
+        <div class="cv-download-row">
+          <details class="cv-dropdown cv-dropdown--resume">
+            <summary class="cv-dropdown-trigger cv-download-btn">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <span>CV İndir</span>
+              <ion-icon name="chevron-down-outline" class="cv-dropdown-chevron"></ion-icon>
+            </summary>
+            <div class="cv-dropdown-menu" role="listbox" aria-label="CV dili seçin">
+              <a href="assets/cv/CV-TR.pdf" download class="cv-dropdown-item" role="option">
+                <span class="cv-dropdown-lang">TR</span>
+                <span>Türkçe</span>
+              </a>
+              <a href="assets/cv/CV-ENG.pdf" download class="cv-dropdown-item" role="option">
+                <span class="cv-dropdown-lang">ENG</span>
+                <span>English</span>
+              </a>
+            </div>
+          </details>
         </div>
 
         <section class="timeline">
@@ -573,16 +445,21 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">YÖK Veri Analizi Okulu — Yapay Zekâ Modülü</h4>
+              <span>Yükseköğretim Kurulu (Koordinasyon: Marmara Üniversitesi)</span>
+              <span>Ekim 2025 — Devam Ediyor</span>
+              <ul class="timeline-bullets">
+                <li>Marmara, ODTÜ, Boğaziçi ve İTÜ katkılarıyla yürütülen programda Yapay Zekâ Modülüne kabul edildim.</li>
+                <li>Makine öğrenmesi, üretken modeller ve uygulamalı yapay zeka projeleri üzerine eğitim alıyorum.</li>
+              </ul>
+            </li>
 
-              <h4 class="h4 timeline-item-title">Süleyman Demirel Üniversitesi -Bilgisayar Mühendisliği-</h4>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Süleyman Demirel Üniversitesi — Bilgisayar Mühendisliği</h4>
               <span>2022 — Devam Ediyor</span>
-
               <p class="timeline-text">
-                Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği bölümünde eğitim alarak, yazılım geliştirme, veri yapıları, algoritmalar ve sistem analizi gibi temel bilgisayar bilimleri konularında derinlemesine bilgi sahibi oldum. Ayrıca, grup projeleri ve bireysel çalışmalar aracılığıyla problem çözme yeteneklerimi geliştirdim.
+                Yazılım geliştirme, veri yapıları, algoritmalar ve sistem analizi konularında eğitim; grup ve bireysel projelerle problem çözme deneyimi.
               </p>
-
-
             </li>
 
           </ol>
@@ -593,7 +470,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -601,249 +478,146 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Yapay Zekâ Modülü - Veri Analizi Okulu (YÖK)</h4>
-              <span>Yükseköğretim Kurulu (Koordinasyon: Marmara Üniversitesi)</span>
-              <span>Ekim 2025 - Devam Ediyor</span>
-              <p class="timeline-text">
-                YÖK tarafından düzenlenen ve Türkiye'nin önde gelen üniversiteleri iş birliğiyle yürütülen Veri Analizi Okulu kapsamında Yapay Zekâ Modülüne kabul edildim. Bu programda makine öğrenmesi, üretken modeller ve çeşitli yapay zekâ uygulamaları üzerine hem teorik hem uygulamalı eğitimler almakta ve çok disiplinli projeler geliştirmekteyim. Program; Marmara Üniversitesi koordinasyonunda, ODTÜ, Boğaziçi Üniversitesi ve İTÜ’nün katkılarıyla yürütülmektedir.
-              </p>
+              <h4 class="h4 timeline-item-title">Lead Mobile Application Developer</h4>
+              <span>Ortak Geleceğimiz Araştırma, İletişim ve Dayanışma Derneği · Yarı zamanlı · Uzaktan</span>
+              <span>Şubat 2026 — Devam Ediyor</span>
+              <ul class="timeline-bullets">
+                <li>Erasmus+ "Atıksız Mutfak" (TR, İtalya, Lüksemburg) projesinde Flutter mobil uygulamanın teknik geliştirmesine liderlik ediyorum.</li>
+                <li>5 dilde lokalizasyon; paydaşlarla gereksinim, UX ve backend entegrasyonu.</li>
+                <li>Sıfır atık tariflerini dijitalleştiren iOS/Android uygulamasının uçtan uca yaşam döngüsünü yönetiyorum.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">TÜBİTAK STING Projesi, Frontend Geliştirici & Araştırmacı</h4>    
               <span>Süleyman Demirel Üniversitesi, Türkiye | PI: Dr. Utku KOSE | TÜBİTAK 1001 Projesi</span>
-              <span>Şubat 2025 - Devam Ediyor</span>
-              <p class="timeline-text">
-                Projede sistemin Flutter tabanlı web uygulamasını geliştiriyorum. Backend tarafında FastAPI ile RESTful mimari kullanarak veri iletişimi, matematiksel model çalıştırma, GNN çalıştırma gibi yapılar üzerine kafa yorarak optimize çarşısın bir yapı oluşturdum. GNN modeli geliştirilirken kendi isteğim ile yardım ederek GNN ile ilgili derinlemesine tecrübe edinme şansı buldum. Tüm aşamaların çıktılarına göre UI ve UX gibi önemli kısımları titizlikle geliştiriyorum.
-              </p>
+              <span>Şubat 2025 — Mayıs 2026</span>
+              <ul class="timeline-bullets">
+                <li>Flutter tabanlı web arayüzü ve kullanıcı deneyimini geliştirdim.</li>
+                <li>FastAPI ile RESTful backend, model çalıştırma ve GNN entegrasyonu üzerinde çalıştım.</li>
+                <li>GNN model geliştirme sürecine gönüllü katkı sağladım.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Flutter Developer & Kurucu Ortak</h4>    
               <span>Konwoy</span>
               <span>Şubat 2025 - Kasım 2025</span>
-              <p class="timeline-text">
-                Konwoy bünyesinde Kurucu Ortak ve Flutter Developer olarak özel şoför kiralama adı altında lojistik süreçlere sahip mobil uygulamanın MVP geliştirme aşamasını yönettim. Provider mimarisi ile state management süreçlerini kurgulayarak kullanıcı ve rezervasyon yapısını merkezi bir yapıda optimize ettim, Firebase servisleri ile gerçek zamanlı veri ve bildirim sistemlerini entegre ettim. Google Maps API üzerinden canlı konum takibi ve dinamik fiyatlandırma modüllerini geliştirirken, Selector ve Consumer yapılarını kullanarak gereksiz widget rebuild'lerini engelledim ve render performansını arttırdım. Teknik altyapının yanı sıra ürün vizyonu süreçlerinde aktif rol aldım.
-              </p>
+              <ul class="timeline-bullets">
+                <li>Özel şoför kiralama MVP’sinin Flutter geliştirmesini yönettim.</li>
+                <li>Provider, Firebase, Google Maps ve dinamik fiyatlandırma modüllerini entegre ettim.</li>
+                <li>Selector/Consumer ile gereksiz rebuild’leri azaltarak performansı iyileştirdim.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Flutter Developer Intern</h4>    
               <span>Newky (Texinsight Teknoloji A.Ş.)</span>
               <span>Haziran 2025 - Ağustos 2025</span>
-              <p class="timeline-text">
-                Newky bünyesinde Flutter Developer Stajyeri olarak, MVVM mimarisi ve Provider state management yapısını kullanarak 9 ekranlık bir uygulama akışının UI ve logic süreçleri üzerine çalıştım. Go-router ile merkezi bir navigasyon altyapısı kurarak Google Maps API üzerinden canlı konum takibi ve QR Code Scanner modüllerini uygulamaya entegre ettim. Geliştirme sürecinde flutter_hooks ile performans optimizasyonu ve MediaQuery ile responsive konuları üzerine ayrıca dikkat ettim. Proje yönetim sürecini ise Agile(Kanban) metodoloji ile Jira üzerinden takip ettim.
-              </p>
+              <ul class="timeline-bullets">
+                <li>MVVM ve Provider ile 9 ekranlık uygulama akışının UI ve logic katmanını geliştirdim.</li>
+                <li>Go Router, Google Maps ve QR Scanner modüllerini entegre ettim.</li>
+                <li>Agile (Kanban) ve Jira ile sprint süreçlerine katıldım.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Proje Yönetimi Stajyeri</h4>    
               <span>SCA Social</span>
               <span>Nisan 2025 - Haziran 2025</span>
-              <p class="timeline-text">
-                "Portfolyo Destekli Proje Yönetimi Staj Programı" kapsamında proje yönetimi, organizasyon yönetimi, yapay zeka, veri bilimi ve bilişim hukuku alanlarında deneyim kazandım. Proje yönetimi departmanının tasarım ve planlama süreçlerine katkı sağladım, çok disiplinli projelerde aktif rol aldım. Uzaktan ve çok uluslu ekip çalışması deneyimi edindim.
-              </p>
+              <ul class="timeline-bullets">
+                <li>Proje yönetimi, AI, veri bilimi ve bilişim hukuku alanlarında staj deneyimi.</li>
+                <li>Planlama süreçlerine katkı; uzaktan ve çok uluslu ekip çalışması.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Bursiyer</h4>    
               <span>Oyun ve Uygulama Akademisi</span>
               <span>Kasım 2024 - Ağustos 2025</span>
-              <p class="timeline-text">
-                Yapay Zeka ve Teknoloji Akademisi'nin Yapay Zeka bölümünde makine öğrenimi, derin öğrenme ve yapay zeka algoritmaları üzerine eğitimler aldım. Python ile projeler geliştirerek yapay zeka alanında teknik yetkinliklerimi artırdım. FastAPI ile backend geliştirme, API tasarımı ve modern web teknolojilerini öğrendim.
-              </p>
+              <ul class="timeline-bullets">
+                <li>ML, derin öğrenme ve AI algoritmaları üzerine yoğun eğitim programı.</li>
+                <li>Python projeleri ve FastAPI ile backend/API geliştirme deneyimi.</li>
+              </ul>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Sponsorship Coordinator</h4>    
               <span>GDG on Campus SDÜ</span>
               <span>Eylül 2024 - Ağustos 2025</span>
-              <p class="timeline-text">
-                Kampüs etkinlikleri için sponsorluklar sağladım ve yönettim. Sponsorlara güçlü ilişkiler kurdum, özel teklifler geliştirdim. Etkinliklerin sorunsuz gerçekleştirilmesi için tedarikçiler ve paydaşlarla koordinasyon sağladım.
-              </p>
+              <ul class="timeline-bullets">
+                <li>Kampüs etkinlikleri için sponsorluk ilişkileri ve koordinasyon.</li>
+                <li>Paydaşlarla iş birliği ve etkinlik lojistiği yönetimi.</li>
+              </ul>
             </li>
           </ol>
 
         </section>
 
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Git & GitHub</h5>
-                <data value="100">100%</data>
+        <section class="tech-stack">
+          <h3 class="h3 tech-stack-title">Tech stack</h3>
+          <div class="tech-stack-card content-card">
+            <div class="tech-stack-group">
+              <h4 class="h5 tech-stack-label">Mobile</h4>
+              <div class="tech-chips">
+                <span class="tech-chip">Flutter</span>
+                <span class="tech-chip">Dart</span>
+                <span class="tech-chip">Firebase</span>
+                <span class="tech-chip">Provider</span>
+                <span class="tech-chip">Go Router</span>
               </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
+            </div>
+            <div class="tech-stack-group">
+              <h4 class="h5 tech-stack-label">Backend</h4>
+              <div class="tech-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">FastAPI</span>
+                <span class="tech-chip">PostgreSQL</span>
+                <span class="tech-chip">Redis</span>
+                <span class="tech-chip">REST APIs</span>
               </div>
+            </div>
+            <div class="tech-stack-group">
+              <h4 class="h5 tech-stack-label">AI / Data</h4>
+              <div class="tech-chips">
+                <span class="tech-chip">PyTorch</span>
+                <span class="tech-chip">RAG</span>
+                <span class="tech-chip">ChromaDB</span>
+                <span class="tech-chip">GNN</span>
+              </div>
+            </div>
+            <div class="tech-stack-group">
+              <h4 class="h5 tech-stack-label">Tools</h4>
+              <div class="tech-chips">
+                <span class="tech-chip">Git</span>
+                <span class="tech-chip">Docker</span>
+                <span class="tech-chip">CI/CD</span>
+                <span class="tech-chip">Figma</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Sertifikalar & Programlar</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">YÖK Veri Analizi Okulu — Yapay Zekâ Modülü</h4>
+              <span>2025 — Devam ediyor</span>
             </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter Development</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Oyun ve Uygulama Akademisi — Yapay Zeka Bursiyeri</h4>
+              <span>2024 — 2025</span>
             </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Dart Programming</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="75">75%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">FastAPI</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">PostgreSQL</h5>
-                <data value="55">55%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Data Science</h5>
-                <data value="45">45%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="40">40%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Figma</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">English</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">LangChain</h5>
-                <data value="50">50%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Docker</h5>
-                <data value="65">65%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Redis</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">CI/CD</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">RabbitMQ</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">N8N</h5>
-                <data value="65">65%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-            </li>
-
-          </ul>
+          </ol>
 
         </section>
 
@@ -901,6 +675,10 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn>Featured</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn>AI/ML Projects</button>
             </li>
 
@@ -941,6 +719,10 @@
               </li>
 
               <li class="select-item">
+                <button data-select-item>Featured</button>
+              </li>
+
+              <li class="select-item">
                 <button data-select-item>AI/ML Projects</button>
               </li>
 
@@ -965,7 +747,26 @@
           </div>
 
           <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="mobile-apps">
+            <li class="project-item active" data-filter-item data-category="featured mobile-apps">
+              <a href="https://github.com/AhmetKoca32/ZoneRun" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <span class="project-badge">Yakında · Mağazalarda</span>
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/zonerun.png" alt="ZoneRun — GPS alan fethetme fitness uygulaması" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ZoneRun - GPS Alan Fethetme Fitness Oyunu</h3>
+
+                <p class="project-category">Flutter ile geliştirilmiş GPS tabanlı fitness oyunu. Google Maps ile poligon çizerek alan fethetme, SQLite geçmişi, gamification ve Firebase Auth kullanılarak rota ve istatistik takibi. Provider mimarisi, liquid glass paylaşım kartı — Android & iOS, mağazalarda yakında.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="featured mobile-apps">
               <a href="https://github.com/AhmetKoca32/Stayzi" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -1023,7 +824,7 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="ai-ml-projects mobile-apps">
+            <li class="project-item active" data-filter-item data-category="featured ai-ml-projects mobile-apps">
               <a href="https://github.com/AhmetKoca32/BtkAkademi-Hackathon-2025" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -1077,43 +878,7 @@
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="mobile-apps">
-              <a href="https://github.com/AhmetKoca32/To-Do-List-App" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/To_do.png" alt="ToDo List App" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ToDo List</h3>
-
-                <p class="project-category">Flutter ile geliştirilmiş, Firebase entegrasyonlu modern bir görev yönetim uygulaması. Kullanıcı dostu arayüz ve gerçek zamanlı veri senkronizasyonu.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="mobile-apps">
-              <a href="https://github.com/AhmetKoca32/Veresiye-Defteri" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Credit_Ledger.png" alt="Veresiye Defteri App" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Veresiye Defteri</h3>
-
-                <p class="project-category">Flutter ile geliştirilmiş, yerel işletmeler için müşteri borç takip uygulaması. SQLite veritabanı entegrasyonu ve detaylı raporlama özellikleri.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="ai-ml-projects web-development research">
+            <li class="project-item active" data-filter-item data-category="featured ai-ml-projects web-development research">
               <a href="https://github.com/tubitaksting" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -1121,7 +886,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Sting.jpg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Sting.jpg" alt="STİNG TÜBİTAK projesi" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">STİNG Tübitak Project</h3>
@@ -1150,42 +915,6 @@
             </li>
 
             <li class="project-item active" data-filter-item data-category="web-development">
-              <a href="https://ahmet-koca-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dark_portfolio.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Portfolio</h3>
-
-                <p class="project-category">Animated personal portfolio example</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web-development">
-              <a href="https://ahmetkoca.vercel.app/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/portfolio.jpg" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Portfolio 2</h3>
-
-                <p class="project-category">Simple personal portfolio example</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="web-development">
               <a href="https://sphere-packing.vercel.app" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -1193,7 +922,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/sphere.jpg" alt="orizon" loading="lazy">
+                  <img src="./assets/images/sphere.jpg" alt="Sphere Packing 3D uygulaması" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Sphere Packing</h3>
@@ -1211,7 +940,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/tower.jpg" alt="orizon" loading="lazy">
+                  <img src="./assets/images/tower.jpg" alt="Tower Blocks oyunu" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Tower Blocks Game</h3>
@@ -1229,7 +958,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Hospital.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/Hospital.jpg" alt="Hospital Appointment System" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Hospital Appointment System</h3>
@@ -1247,7 +976,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Library.jpg" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/Library.jpg" alt="Library Management System" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Library Management System</h3>
@@ -1256,78 +985,6 @@
 
               </a>
             </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
 
           </ul>
 
@@ -1351,14 +1008,15 @@
 
         <section class="blog-posts">
 
-          <h3 class="h3" style="margin-bottom: 20px; color: var(--orange-yellow-crayola);">Türkçe Yazılar</h3>
+          <h3 class="h3 blog-section-title">Türkçe Yazılar</h3>
+
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
               <a href="https://medium.com/@ahmetkocaa/chatgpt-nedir-ve-nasıl-çalışır-yapay-zeka-i̇le-sohbetin-arkasında-neler-oluyor-5f8f1bcb367c" target="_blank" rel="noopener noreferrer">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/chatgpt.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/chatgpt.png" alt="ChatGPT makalesi kapak görseli" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1368,7 +1026,7 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">23 Kasım 2024</time>
+                    <time datetime="2024-11-23">23 Kasım 2024</time>
                   </div>
 
                   <h3 class="h3 blog-item-title">ChatGPT Nedir ve Nasıl Çalışır? Yapay Zeka İle Sohbetin Arkasında Neler Oluyor?</h3>
@@ -1384,170 +1042,35 @@
 
           </ul>
 
-          <h3 class="h3" style="margin: 30px 0 20px 0; color: var(--orange-yellow-crayola);">English Articles</h3>
+          <h3 class="h3 blog-section-title blog-section-title--spaced">English Articles</h3>
+
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <div style="background: var(--border-gradient-onyx); padding: 30px; border-radius: 16px; text-align: center; position: relative; z-index: 1;">
-                <div style="position: absolute; inset: 1px; border-radius: inherit; background: var(--bg-gradient-jet); z-index: -1;"></div>
-                
-                <div style="margin-bottom: 15px;">
-                  <ion-icon name="document-text-outline" style="font-size: 48px; color: var(--orange-yellow-crayola);"></ion-icon>
+              <div class="blog-coming-soon">
+
+                <div class="blog-coming-soon-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
                 </div>
-                
-                <h3 class="h3" style="color: var(--white-2); margin-bottom: 10px;">Coming Soon</h3>
-                
-                <p style="color: var(--light-gray); font-size: var(--fs-6); line-height: 1.6;">
+
+                <h3 class="h3 blog-coming-soon-title">Coming Soon</h3>
+
+                <p class="blog-coming-soon-text">
                   English technical articles about Flutter development, AI/ML projects, and modern web technologies are currently being prepared. Stay tuned for in-depth tutorials and insights!
                 </p>
-                
-                <div style="margin-top: 15px; padding: 8px 16px; background: var(--onyx); border-radius: 8px; display: inline-block;">
-                  <span style="color: var(--orange-yellow-crayola); font-size: var(--fs-7); font-weight: var(--fw-500);">Under Development</span>
-                </div>
+
+                <span class="blog-coming-soon-badge">Under Development</span>
+
               </div>
             </li>
 
-            <!-- <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li> -->
-
           </ul>
+
+          <p class="blog-footer-note">
+            Tüm yazılar için
+            <a href="https://medium.com/@ahmetkocaa" target="_blank" rel="noopener noreferrer" class="blog-medium-link">@ahmetkocaa</a>
+            Medium profilini ziyaret edebilirsiniz.
+          </p>
 
         </section>
 
@@ -1567,13 +1090,10 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d30.57050537520186!3d37.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b10ee52c7f8f0b%3A0x1a927c0a25de8e4c!2zSXNwYXJ0YSwgVVRJTkU!5e0!3m2!1sen!2str!4v1647608789441!5m2!1sen!2str"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+        <p class="contact-location">
+          <ion-icon name="location-outline"></ion-icon>
+          Isparta, Türkiye — <a href="mailto:ahmetkoca.dev@gmail.com">ahmetkoca.dev@gmail.com</a>
+        </p>
         
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
@@ -1596,10 +1116,6 @@
             </button>
           </form>
         </section>
-        
-        
-
-        </section>
 
       </article>
 
@@ -1615,7 +1131,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=3"></script>
 
   <!--
     - ionicon link
